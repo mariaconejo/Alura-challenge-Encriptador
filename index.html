@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge I:Encriptador</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sup"> <img src="./assets/Logo.png" alt="logo"></div>
+    <main class="main">
+        <section class="formbox">
+            <form action="">
+                <input class="text-input" type="text" name="input-texto" id="input-texto"
+                    placeholder="Ingrese el texto aqui">
+                <div class="anuncio">
+                    <img src="/assets/icon.png" alt="icono">
+                    <label for="input-texto" class="lab">Solo letras minúsculas, sin acento</label>
+                </div>
+                <input class="btn" type="button" value="Encriptar" id="btn-encriptar">
+                <input class="btn" type="button" value="Desencriptar" id="btn-desencriptar">
+            </form>
+        </section>
+        <section class="msg box">
+            <input class="text-input" type="text" id="msg"></input>
+            <div class="posicionar" id="posicion">
+                <img src="/assets/Muñeco.png" alt="muñeco">
+                <h6 class="msgtexto">Ningún mensaje fue encontrado</h6>
+                <p class="ingresemsg">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <input class="btn" type="button" value="Copiar" id="btn-copy">
+        </section>
+    </main>
+    <footer>
+        <p class="pie">María José Conejo Leiva @2024</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
