@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #F3F5FC;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.main {
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.sup {
+    padding-top: 45px;
+    padding-left: 50px;
+    padding-bottom: 40px;
+}
+#input-texto {
+    background-color: transparent;
+    width: 700px;
+    height: 569px;
+    border: none;
+    color: #0A3871;
+    /* Cambia el color del texto */
+    font-size: 24px;
+}
+#input-texto::placeholder {
+    position: absolute;
+    top: 10px;
+    /* Ajusta la posición vertical del placeholder */
+    left: 10px;
+    /* Ajusta la posición horizontal del placeholder */
+    color: #0A3871;
+    font-size: 22px;
+}
+.formbox {
+    height: 672px;
+    width: 700px;
+}
+#btn-desencriptar {
+    color: #0A3871;
+    background-color: #D8DFE8;
+    width: 328px;
+    padding: 18px;
+    border-radius: 24px;
+    border-color: #0A3871;
+    border: 1px solid;
+}
+.anuncio {
+    display: flex;
+}
+.lab {
+    color: #495057;
+    padding-left: 10px;
+    font-size: 12px;
+}
+.box {
+    padding: 10px;
+    margin: 0 10px 0 10px;
+    background-color: #fff;
+    border-radius: 32px;
+    width: 400px;
+    height: 650px;
+    position: relative;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+#btn-encriptar {
+    border: 1px solid;
+    color: #fff;
+    background-color: #0A3871;
+    width: 328px;
+    padding: 18px;
+    border-radius: 24px;
+    border-color: #fff;
+}
+.btn {
+    border: 0;
+    color: rgb(29, 27, 27);
+    font-weight: bold;
+    background-color: #0A3871;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 0.5em;
+}
+.text-input {
+    border-radius: 0.5em;
+    display: block;
+    padding: 0.3em;
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    border: none;
+}
+#btn-copy {
+    border: 1px solid;
+    color: #0A3871;
+    background-color: #fff;
+    width: 328px;
+    padding: 18px;
+    border-radius: 24px;
+    position: absolute;
+    top: 583px;
+    margin-left: 28px;
+}
+footer {
+    text-align: center;
+    width: 100%;
+    height: 8%;
+    bottom: 0;
+    position: fixed;
+    background-color: rgb(20, 20, 20);
+}
+#msg {
+    color: #0A3871;
+    /* Cambia el color del texto */
+    font-size: 24px;
+}
+.hidden {
+    display: none;
+    /* Oculta el div con esta clase */
+}
+.posicionar {
+    position: absolute;
+    z-index: 2;
+
+}
+.msgtexto {
+    color: #343A40;
+    font-size: 23px;
+    text-align: center;
+    padding-top: 44px;
+}
+.ingresemsg {
+    color: #495057;
+    font-size: 12px;
+    text-align: center;
+}
+.pie {
+    font-family: alegreya-light;
+    font-size: 15px;
+    color: silver;
+    padding: 1em;
+}
+@media (max-width: 768px) {
+    .main {
+        flex-wrap: wrap;
+    }
+    .posicionar img {
+        display: none;
+    }
+    .text-input {
+        height: 126px;
+    }
+    .box {
+        width: 688px;
+        height: 162px;
+    }
+    #input-texto {
+        width: 662px;
+        height: 343px;
+        background-color: transparent;
+    }
+    .formbox {
+        height: 478px;
+        width: 677px;
+    }
+    .posicionar {
+        left: 100px;
+        bottom: 56px;
+    }
+    .msgtexto {
+        padding-bottom: 10px;
+    }
+
+    #btn-copy {
+        top: 165px;
+        margin-left: 112px;
+    }
+}
+@media (max-width: 375px) {
+    .box {
+        width: 688px;
+        height: 223px;
+        padding: 0;
+    }
+    #input-texto {
+        width: 327px;
+        height: 241px;
+    }
+    .formbox {
+        height: 416px;
+        width: 677px;
+    }
+    .posicionar {
+        left: 0;
+        bottom: 66px;
+    }
+    .msgtexto {
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+    #btn-copy {
+        padding: 16px;
+        top: 229px;
+        right: -22px;
+
+    }
+}
